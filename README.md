@@ -11,8 +11,10 @@
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=matplotlib&logoColor=white)
-![Seaborn](https://img.shields.io/badge/Seaborn-3776AB?style=for-the-badge&logoColor=white)
+![Seaborn](https://img.shields.io/badge/Seaborn-3776AB?style=for-the-badge&logo=white)
 ![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?style=for-the-badge&logo=scipy&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)
+![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
 ---
@@ -129,9 +131,15 @@ The dataset consists of **5,370 customer transactions** with **10 attributes**, 
 ```
 BUSINESS_CASE_STUDY_WALMART/
 │
-├── 📄 README.md                                                  # Project documentation
-├── 📊 Defining_Problem_Statement_and_Analyzing_basic_metrics.pdf  # Detailed analysis report
-└── 📜 LICENSE                                                     # MIT License
+├── 📁 data/
+│   └── 📊 walmart_data.csv                                            # Transaction dataset
+├── 📁 images/                                                         # Exported EDA visualizations
+├── 📄 app.py                                                          # Interactive Streamlit dashboard
+├── 📄 requirements.txt                                                # Dependency definitions
+├── 📓 Walmart_CLT_Analysis.ipynb                                      # Central Limit Theorem Jupyter notebook
+├── 🐍 Walmart_CLT_Analysis.py                                         # Python counterpart of the analysis notebook
+├── 📊 Defining_Problem_Statement_and_Analyzing_basic_metrics.pdf      # Detailed analysis report
+└── 📜 LICENSE                                                         # MIT License
 ```
 
 ---
@@ -163,31 +171,42 @@ BUSINESS_CASE_STUDY_WALMART/
 
 ## 🚀 Getting Started
 
-### Prerequisites
+### 🖥️ Running the Interactive Dashboard (Streamlit)
 
-Ensure you have **Python 3.7+** installed along with the required libraries.
+To view the live interactive web dashboard:
 
-### Installation
+1. **Clone the repository and navigate inside**:
+   ```bash
+   git clone https://github.com/PritamPalit-official/BUSINESS_CASE_STUDY_WALMART.git
+   cd BUSINESS_CASE_STUDY_WALMART
+   ```
 
-```bash
-# Clone the repository
-git clone https://github.com/PritamPalit-official/BUSINESS_CASE_STUDY_WALMART.git
+2. **Install dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-# Navigate to the project directory
-cd BUSINESS_CASE_STUDY_WALMART
+3. **Run the Streamlit application**:
+   ```bash
+   streamlit run app.py
+   ```
 
-# Install required dependencies
-pip install pandas numpy matplotlib seaborn scipy jupyter
-```
+This will automatically launch the dashboard in your default browser at `http://localhost:8501`.
 
-### Run the Analysis
+### 📓 Running the Notebook Analysis
 
-```bash
-# Launch Jupyter Notebook
-jupyter notebook
-```
+If you'd like to explore the step-by-step Jupyter Notebook analysis:
 
-Open the analysis report PDF to explore the complete findings and visualizations.
+1. **Install Jupyter and base requirements**:
+   ```bash
+   pip install pandas numpy matplotlib seaborn scipy jupyter
+   ```
+
+2. **Launch Jupyter**:
+   ```bash
+   jupyter notebook
+   ```
+   Open `Walmart_CLT_Analysis.ipynb` to see the complete exploration workflow.
 
 ---
 
